@@ -1,47 +1,41 @@
+import { Gradients } from '../../utils/utils';
+
 export default function Footer({ options }) {
   const { userName, home, aboutUs, contact, linkedIn, twitter, instagram } =
     options;
 
   return (
-    <div class="bg-white pl-20 pr-20 pt-10 pb-10 text-center dark:bg-neutral-700 lg:text-left">
-      <div class="flex items-center justify-between border-t-2 border-gray-300 pt-8">
-        <div class="text-left text-2xl text-neutral-700 dark:text-neutral-200">
-          Xfolio.
-        </div>
+    <div className="bg-white font-secondary text-black pl-20 pr-20 pt-10 pb-10 text-center dark:bg-black dark:text-white lg:text-left">
+      <div className="flex items-center justify-between border-t-2 border-gray-300 pt-8">
+        <div className="text-left text-2xl">Xfolio.</div>
 
         <div>
-          <a class="text-xs text-neutral-800 dark:text-neutral-400" href={home}>
+          <a className="text-xs" href={home}>
             Home
           </a>
-          <a
-            class="pl-6 text-xs text-neutral-800 dark:text-neutral-400"
-            href={aboutUs}
-          >
+          <a className="pl-6 text-xs" href={aboutUs}>
             About us
           </a>
-          <a
-            class="pl-6 text-xs text-neutral-800 dark:text-neutral-400"
-            href={contact}
-          >
+          <a className="pl-6 text-xs " href={contact}>
             Contact
           </a>
         </div>
       </div>
 
-      <div class="flex items-center justify-between pt-8 text-left text-neutral-700 dark:text-neutral-200">
-        <div class="text-left text-xs">© Designed by {userName} </div>
+      <div className="flex items-center justify-between pt-8 text-left">
+        <div className="text-left text-xs">© Designed by {userName} </div>
 
         <div>
           <a
             href={linkedIn}
             type="button"
-            class="m-1 h-6 w-6 rounded-full border border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+            className="m-1 h-6 w-6 rounded-full border border-black dark:border-white uppercase leading-normal transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
             data-te-ripple-init
             data-te-ripple-color="light"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="mx-auto h-full w-3"
+              className="mx-auto h-full w-3"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -52,13 +46,13 @@ export default function Footer({ options }) {
           <a
             href={twitter}
             type="button"
-            class="m-1 h-6 w-6 rounded-full border border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+            className="m-1 h-6 w-6 rounded-full border border-black dark:border-white uppercase leading-normal transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
             data-te-ripple-init
             data-te-ripple-color="light"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="mx-auto h-full w-3"
+              className="mx-auto h-full w-3"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -69,13 +63,13 @@ export default function Footer({ options }) {
           <a
             href={instagram}
             type="button"
-            class="m-1 h-6 w-6 rounded-full border border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+            className="m-1 h-6 w-6 rounded-full border border-black dark:border-white uppercase leading-normal transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
             data-te-ripple-init
             data-te-ripple-color="light"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="mx-auto h-full w-3"
+              className="mx-auto h-full w-3"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
