@@ -1,5 +1,3 @@
-import { Gradients } from '../../utils/utils';
-
 export default function Footer({ options }) {
   const { userName, home, aboutUs, contact, linkedIn, twitter, instagram } =
     options;

@@ -4,6 +4,9 @@ import BannerPreview from '../components/Banner/BannerPreview.png';
 import Footer from '../components/Footer/Footer';
 import FooterOptions from '../components/Footer/FooterOptions';
 import FooterPreview from '../components/Footer/FooterPreview.png';
+import NavbarComponent from '../components/NavbarComponent/NavbarComponent';
+import NavbarComponentOptions from '../components/NavbarComponent/NavbarComponentOptions';
+import NavbarComponentPreview from '../components/NavbarComponent/NavbarComponentPreview.png';
 import Component from '../models/Component';
 import { Gradients } from './utils';
 
@@ -26,5 +29,23 @@ export const registeredComponents = new Map([
       twitter: 'URL5',
       instagram: 'URL6',
     }),
+  ],
+
+  [
+    'Navbar',
+    new Component(
+      'Navbar',
+      NavbarComponent,
+      NavbarComponentOptions,
+      NavbarComponentPreview,
+      {
+        home: 'URL1',
+        services: 'URL2',
+        projects: 'URL3',
+        about: 'URL4',
+        blog: 'URL5',
+        letsTalk: 'URL6',
+      }
+    ),
   ],
 ]);
